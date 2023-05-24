@@ -1,9 +1,9 @@
 @extends('layout.page')
 
 @section('welcome')
-    <div class="container d-flex">
+    <div class="container d-flex flex-wrap text-center">
         @foreach ($movies as $movie)
-            <div class="card" style="width: 15rem;">
+            <div class="card" style="width: 210px; margin: 10px">
                 <img src="{{ $movie->image }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ $movie->title }}</h5>
